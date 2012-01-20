@@ -2,7 +2,13 @@
 <html>
 <link rel="stylesheet" type="text/css" href="/css/style.css" />
 <body>
-<strong>Add a Testimonial</strong>
+<h1>Add a Testimonial</h1>
+<form method="post" action="/testimonials">
+  <p><%= captcha_image_tag %></p>
+  <p><%= captcha_answer_tag %></div>
+  <div><input type="submit" value="Submit" /></div>
+</form>
+</code>
 </body>
 </html>
 
