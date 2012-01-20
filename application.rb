@@ -5,5 +5,5 @@ get '/' do
 end
 
 get '/testimonials' do
-  "Add a Testimonial"
+  erb :testimonials
 end
