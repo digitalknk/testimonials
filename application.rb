@@ -1,5 +1,23 @@
 require 'sinatra'
 require 'sinatra/captcha'
+require 'mongoid'
+
+Mongoid.load!("mongoid.yml")
+
+class Testimonial
+  include Mongoid::Document
+  include Mongoid::Timestamps::Created
+  field :firstname
+  field :lastname
+  field :company
+  field :city
+  field :state
+  field :country
+  field :testimonial
+  field :email
+
+  validates_presence_of :firstname, :lastname, :testimonial
+end
 
 get '/' do
   "Welcome! Enjoy your stay ... :-)"
@@ -10,6 +28,25 @@ get '/testimonials' do
 end
 
 post '/testimonials' do
-  halt(401, "invalid captcha") unless captcha_pass?
-  "passed!"
+  @testimonial = Testimonial.new(:firstname => params[:testimonial_firstname],
+                                 :lastname => params[:testimonial_lastname],
+                                 :company => params[:testimonial_company],
+                                 :city => params[:testimonial_city],
+                                 :state => params[:testimonial_state],
+                                 :country => params[:testimonial_country],
+                                 :testimonial => params[:testimonial_testimonial],
+                                 :email => params[:testimonial_email]
+                                 )
+
+  if @testimonial.save
+    redirect '/thankyou'
+  else
+    redirect '/testimonials'
+  end
+  # halt(401, "invalid captcha") unless captcha_pass?
+  # "passed!"
+end
+
+get "/thankyou" do
+  "Thank you for filling out the form."
 end

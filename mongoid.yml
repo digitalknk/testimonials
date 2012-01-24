@@ -1,0 +1,12 @@
+defaults: &defaults
+
+development:
+  host: localhost
+  database: testimonials_development
+
+test:
+  host: localhost
+  database: testimonials_test
+
+production:
+  uri: <%= ENV['MONGOLAB_URI'] %>
