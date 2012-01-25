@@ -38,7 +38,7 @@ post '/testimonials' do
                                  :email => params[:testimonial_email]
                                  )
 
-  if @testimonial.save
+  if captcha_pass? && @testimonial.save
     redirect '/thankyou'
   else
     redirect '/testimonials'

@@ -2,8 +2,6 @@
 <html>
 <link rel="stylesheet" type="text/css" href="/css/style.css" />
 <body>
-  <!-- <p><%#= captcha_image_tag %></p>
-  <p><%#= captcha_answer_tag %></div> -->
 
     <form method="post" action="/testimonials">
           <div class="form_description">
@@ -243,6 +241,8 @@
     <div>
       <input id="testimonial_email" name="testimonial_email" type="text" value=""/>
     </div>
+    <p><%= captcha_image_tag %></p>
+    <p><%= captcha_answer_tag %></p>
         <input class="button_text" type="submit" name="submit" value="Submit" />
     </form>
 
