@@ -9,30 +9,30 @@
     <form method="post" action="/testimonials">
       <div class="form_description">
         <h2>Submit your testimonial</h2>
-        <p></p>
+        <p>Please fill out the form with your honest testimonial. The fields marked with a "<strong>*</strong>" are REQUIRED. So please at least fill out the required fields. Thank You.</p>
       </div>
     <span>
-      <label for="testimonial_firstname">First Name:</label>
+      <label for="firstname">First Name*:</label>
       <input id="testimonial_firstname" name= "testimonial_firstname" size="25" value=""/>
     </span>
     <span>
-      <label for="testimonial_lastname">Last Name:</label>
+      <label for="lastname">Last Name*:</label>
       <input id="testimonial_lastname" name= "testimonial_lastname" size="25" value=""/>
     </span>
     <div>
-      <label for="testimonial_company">Company:</label>
+      <label for="company">Company:</label>
       <input id="testimonial_company" name="testimonial_company" type="text" size="50" value=""/>
     </div>
     <span>
-      <label for="testimonial_city">City:</label>
+      <label for="city">City:</label>
       <input id="testimonial_city" name="testimonial_city" value="" size="25" type="text">
     </span>
     <span>
-      <label for="testimonial_state">State / Province / Region:</label>
+      <label for="state">State / Province / Region:</label>
       <input id="testimonial_state" name="testimonial_state" size="25" value="" type="text">
     </span>
     <div>
-      <label for="testimonial_country">Country:</label>
+      <label for="country">Country:</label>
       <select id="testimonial_county" name="testimonial_country">
       <option value="" selected="selected"></option>
       <option value="Afghanistan" >Afghanistan</option>
@@ -231,19 +231,19 @@
       <option value="Zimbabwe" >Zimbabwe</option>
       </select>
     </div>
-      <label class="description">Testimonial:</label>
+      <label class="testimonial">Testimonial*:</label>
     <div>
       <textarea id="testimonial_testimonial" name="testimonial_testimonial"></textarea>
     </div>
     <div>
-      <label class="email" for="email">Email:</label>
+      <label class="email" for="email">Email*:</label>
       <input id="testimonial_email" name="testimonial_email" type="text" value="" size="50"/>
     </div>
-    <p>
+    <div>
       <%= captcha_image_tag %><br />
-      <label class="captcha" for="captcha">Captcha:</label>
+      <label class="captcha" for="captcha">Captcha*:</label>
       <%= captcha_answer_tag %>
-    </p>
+    </div>
     <input class="button_text" type="submit" name="submit" value="Submit" />
     </form>
   </div>

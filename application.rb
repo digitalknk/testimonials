@@ -16,7 +16,7 @@ class Testimonial
   field :testimonial
   field :email
 
-  validates_presence_of :firstname, :lastname, :testimonial
+  validates_presence_of :firstname, :lastname, :testimonial, :email
 end
 
 get '/' do
