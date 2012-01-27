@@ -18,9 +18,6 @@ I decided to use [Heroku][5] as it is the easiest and quickest way to deploy an 
     git clone git://github.com/digitalknk/testimonials.git
     cd testimonials
     bundle
-    git init
-    git add .
-    git commit -am "initial commit"
     heroku apps:create -s cedar
     heroku addons:add mongolab:small
     git push heroku master
