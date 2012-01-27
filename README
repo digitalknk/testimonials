@@ -1,0 +1,17 @@
+# Testimonials
+
+### Why did I make it?
+I had to create a simple app that I can send the link.
+
+### What gems did I use?
+ - [Sinatra][1]
+ - [Sinatra-captcha][2]
+ - [mongoid][3]
+ - bson_ext
+
+### How do install?
+
+
+  [1]: http://www.sinatrarb.com/
+  [2]: https://github.com/bmizerany/sinatra-captcha
+  [3]: https://github.com/mongoid/mongoid
