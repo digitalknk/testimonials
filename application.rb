@@ -24,7 +24,7 @@ get '/' do
 end
 
 get '/testimonials' do
-  erb :testimonials
+  erb :form
 end
 
 post '/testimonials' do
