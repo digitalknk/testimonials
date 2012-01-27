@@ -24,10 +24,14 @@ get '/' do
 end
 
 get '/testimonials' do
+  "Coming Soon!"
+end
+
+get '/form' do
   erb :form
 end
 
-post '/testimonials' do
+post '/testimonial' do
   @testimonial = Testimonial.new(:firstname => params[:testimonial_firstname],
                                  :lastname => params[:testimonial_lastname],
                                  :company => params[:testimonial_company],
