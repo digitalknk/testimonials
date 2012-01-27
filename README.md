@@ -15,7 +15,7 @@ I decided to use [Heroku][5] as it is the easiest and quickest way to deploy an 
 
 *Make an account at [Heroku.com][5] first if you don't have an account. If this is your first time using Heroku then make sure you have installed the Heroku gem and setup your Heroku account correctly. You can see how at this link [Getting Started with Heroku][6].*
 
-    git checkout git://github.com/digitalknk/testimonials.git
+    git clone git://github.com/digitalknk/testimonials.git
     cd testimonials
     bundle
     git init
