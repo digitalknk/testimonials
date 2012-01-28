@@ -26,7 +26,7 @@ I decided to use [Heroku][5] as it is the easiest and quickest way to deploy an 
 **NOTE:** You don't have to use the app with the cedar stack but this has become a habit for me.
 
 ### TODO
-Right now you can only submit testimonials. I will have it so you can **see the testimonials in HTML** and **JSON**. Most likely be my next commit :-)
+I will have it so you can **see the testimonials in JSON**. Most likely be my next commit :-)
 
 ### Support
 If you have any problems or questions just contact me and I would be more then happy to help you out.
