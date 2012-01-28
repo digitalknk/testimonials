@@ -24,7 +24,8 @@ get '/' do
 end
 
 get '/testimonials' do
-  "Coming Soon!"
+  @testimonials = Testimonial.all
+  erb :testimonials
 end
 
 get '/form' do

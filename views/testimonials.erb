@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+  <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
+  <!--[if lt IE 8]><link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+<body>
+  <div class="container">
+    <h1>Testimonials</h1>
+    <% @testimonials.each do |t| %>
+      <p class="testimonial">
+        <div><%= t.testimonial %></div>
+        <span class="author"><em><%= t.firstname %> <%= t.lastname %></em></span>
+        <br />
+        <span class="location"><em><%= t.city %> <%= t.state %> <%= t.country %></em></span>
+      </p>
+    <% end %>
+  </div>
+</body>
+</html>
