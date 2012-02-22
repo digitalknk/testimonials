@@ -19,7 +19,7 @@ I decided to use [Heroku][5] as it is the easiest and quickest way to deploy an 
     cd testimonials
     bundle
     heroku apps:create -s cedar
-    heroku addons:add mongolab:small
+    heroku addons:add mongolab:starter
     git push heroku master
     heroku open
 
