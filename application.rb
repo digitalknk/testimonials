@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/captcha'
 require 'mongoid'
+require 'json'
 
 Mongoid.load!("mongoid.yml")
 
@@ -26,6 +27,12 @@ end
 get '/testimonials' do
   @testimonials = Testimonial.all
   erb :testimonials
+end
+
+get '/testimonials.json' do
+    content_type :json
+    all_testimonials = Testimonial.all
+    all_testimonials.to_json
 end
 
 get '/form' do

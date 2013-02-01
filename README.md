@@ -10,7 +10,7 @@ I wanted to create a simple app that I can easily collect testimonials from my c
  - bson_ext gem
  - [Blueprint CSS Framework][7]
 
-### How do install?
+### How to install?
 I decided to use [Heroku][5] as it is the easiest and quickest way to deploy an app. Getting it up and running is pretty easy, just follow the steps below.
 
 *Make an account at [Heroku.com][5] first if you don't have an account. If this is your first time using Heroku then make sure you have installed the Heroku gem and setup your Heroku account correctly. You can see how at this link [Getting Started with Heroku][6].*
@@ -18,15 +18,13 @@ I decided to use [Heroku][5] as it is the easiest and quickest way to deploy an 
     git clone git://github.com/digitalknk/testimonials.git
     cd testimonials
     bundle
-    heroku apps:create -s cedar
+    heroku apps:create
     heroku addons:add mongolab:starter
     git push heroku master
     heroku open
 
-**NOTE:** You don't have to use the app with the cedar stack but this has become a habit for me.
-
 ### TODO
-I will have it so you can **see the testimonials in JSON**. Most likely be my next commit :-)
+You tell me :-)
 
 ### Support
 If you have any problems or questions just contact me and I would be more then happy to help you out.
